@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 import sys
 import json
@@ -12,10 +12,10 @@ import concurrent.futures
 #Process command line argument
 arg_num = len(sys.argv)
 if arg_num < 2:
-    print("一个都不给？")
+    print("Not enough arguments")
     sys.exit()
 elif arg_num > 2:
-    print("给一个就行....")
+    print("Too many arguments")
     sys.exit()
 else:
     upper_threshold = int(sys.argv[1])
